@@ -45,7 +45,8 @@ public class CourseServiceImple implements CourseService{
         return c;
          */
 
-        return courseDao.getOne(courseId);
+//        return courseDao.getOne(courseId);
+        return courseDao.findById(courseId).get();
 
     }
 

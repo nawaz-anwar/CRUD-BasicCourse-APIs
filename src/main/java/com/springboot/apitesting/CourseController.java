@@ -19,7 +19,7 @@ public class CourseController {
         return this.courseService.getCourses();
     }
 
-    @GetMapping("/courses/{courseId}")
+    @PostMapping("/courses/{courseId}")
     public Course getCourse(@PathVariable String courseId){
         return this.courseService.getCourse(Long.parseLong(courseId));
     }
